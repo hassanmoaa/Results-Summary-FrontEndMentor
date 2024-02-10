@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/hassanmoaa/Results-Summary-FrontEndMentor.git)
+- Live Site URL: (https://marvelous-gumption-4d32c9.netlify.app)
 
 ### Built with
 
