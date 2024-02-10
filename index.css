@@ -199,6 +199,7 @@ is alot easier */
 
     body {
         line-height: 2;
+
     }
 
     .container {
@@ -208,7 +209,7 @@ is alot easier */
         box-shadow: 1px 1px 10px var(--verbal);
 
         max-width: 700px;
-        margin: 3rem auto;
+        margin: 10rem auto;
         border-radius: 35px;
      }
 
