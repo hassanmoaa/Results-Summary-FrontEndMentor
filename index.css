@@ -1,0 +1,229 @@
+:root {
+
+    /*summary-components*/
+    --reaction: hsl(0, 100%, 67%);
+    --memory: hsl(39, 100%, 56%);
+    --verbal: hsl(166, 100%, 37%);
+    --visual: hsl(234, 85%, 45%);
+
+    /*background-colors*/
+    --top-bg: hsl(252, 100%, 67%);
+    --bottom-bg: hsl(241, 81%, 54%);
+
+    /*circle-colors*/
+    --top-crcl: hsla(256, 72%, 46%, 1);
+    --bottom-crcl: hsla(241, 72%, 46%, 0);
+
+    /*neutral*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-blue: hsl(224, 30%, 27%);
+
+    /*font*/
+    --ff: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+
+body {
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--ff);
+    font-size: 1.125rem;
+}
+
+
+.container {
+   display: flex;
+   flex-direction: column;
+   
+   max-width: 375px;
+   margin: 3rem auto;
+   
+}
+
+
+.header {
+    background: linear-gradient(var(--top-bg), var(--bottom-bg));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1rem;
+}
+
+
+.crcl {
+    background: linear-gradient(var(--top-crcl), var(--bottom-crcl));
+
+    clip-path: circle(45px);
+
+    margin: .5rem auto;
+    padding: .5rem;
+   
+
+/* Made it a circle also but 
+CLIP-PATH: CIRCLE(50PX); 
+is alot easier */
+
+ /* height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    margin: 0 auto; */
+
+/* JUST A <TIP> */
+
+}
+
+
+.summary {
+    padding: 1rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: .4rem;
+    gap: 12px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .6em .4rem;
+    border-radius: 10px;
+}
+
+
+.stats {
+    margin-left: 8rem;
+}
+
+
+.continue-btn {
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.continue-btn:hover:focus {
+    cursor: pointer;
+    background: linear-gradient(var(--top-bg), var(--bottom-bg));
+}
+
+
+
+/* STYLING FOR THE ROW CARDS */
+
+.row-red {
+    background-color: hsla(0, 100%, 67%, 10%);
+    
+}
+
+.row-yellow {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+.row-green {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+.row-blue {
+    background-color: hsla(234, 85%, 45%, 10%);
+}
+
+
+
+/* TYPOGRAPHY */
+
+.crcl-h {
+    color: var(--white);
+}
+
+.crcl-p {
+    color: var(--light-lavender);
+    font-size: .8rem;
+}
+
+.great {
+    color: var(--white);
+}
+
+.summary__section--title {
+    text-align: left;
+    padding-bottom: .5rem;
+}
+
+.red {
+    color: var(--reaction);
+    margin-left: .8rem;
+}
+
+.yellow {
+    color: var(--memory);
+    margin-left: .8rem;
+}
+
+.green {
+    color: var(--verbal);
+    marg
+}
+
+.blue {
+    color: var(--visual);
+}
+
+.grey {
+    color: var(--light-lavender);
+}
+
+.bold {
+    color: var(--dark-blue);
+}
+
+/*footer*/
+.attribution { font-size: 11px; text-align: center; display: none;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 600px) {
+
+    body {
+        line-height: 2;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--white);
+        box-shadow: 1px 1px 10px var(--verbal);
+
+        max-width: 700px;
+        margin: 3rem auto;
+        border-radius: 35px;
+     }
+
+     .header {
+        border-radius: 25px;
+     }
+
+     .crcl {
+        clip-path: circle(5rem at center); 
+
+        margin: 3rem auto;
+        padding: 1rem;
+     }
+
+     .crcl-h {
+        font-size: 4rem;
+     }
+}
